@@ -1,44 +1,34 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="factorymanagment._Default" %>
+<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="factorymanagment._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
-
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+    <div class="row mt-4">
+        <div class="col-md-3"><div class="card p-3 shadow-sm mb-3"><h5>Total Machines</h5><h2 class="text-primary">56</h2></div></div>
+        <div class="col-md-3"><div class="card p-3 shadow-sm mb-3"><h5>Running Machines</h5><h2 class="text-success">42 (75%)</h2></div></div>
+        <div class="col-md-3"><div class="card p-3 shadow-sm mb-3"><h5>Production Today</h5><h2 class="text-info">8,450 Units</h2></div></div>
+        <div class="col-md-3"><div class="card p-3 shadow-sm mb-3 border-danger border-start border-4"><h5>Low Stock</h5><h2 class="text-danger">12 Items</h2></div></div>
+    </div>
+    
+    <div class="row mt-3">
+        <div class="col-md-8">
+            <div class="card shadow-sm p-3 h-100">
+                <h4 class="mb-3">Quick Actions</h4>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-outline-primary">+ Add Material</button>
+                    <button class="btn btn-outline-success">Start Production</button>
+                    <button class="btn btn-outline-info">View Reports</button>
+                    <button class="btn btn-outline-secondary">Stock</button>
+                </div>
+            </div>
         </div>
-    </main>
-
+        <div class="col-md-4">
+            <div class="card shadow-sm p-3 h-100">
+                <h4 class="mb-3">Recent Activities</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2">?? Production Completed (PRD-1258)</li>
+                    <li class="mb-2">?? New Purchase Order (PO-1234)</li>
+                    <li class="mb-2">?? Quality Check (Batch B-4321)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </asp:Content>
