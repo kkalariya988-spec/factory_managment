@@ -1,4 +1,4 @@
-<%@ Page Title="Machines" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="factorymanagment.Machines.Default" %>
+<%@ Page Title="Machines" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="factorymanagment.Machines.Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
